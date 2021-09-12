@@ -14,6 +14,12 @@
 .fw-700{
     font-weight:700;
 }
+.fz-21{
+    font-size:1.2rem;
+}
+.fz-16{
+    font-size:.9rem;
+}
 .color-dark{
    color:var(--VeryDarkDesaturatedBlue);
 }
@@ -28,6 +34,7 @@ body{
 .main::before
 {
     position: absolute;
+    z-index:1;
 }
 .main::before{
     content:url("../images/bg-pattern-top.svg");
@@ -47,26 +54,28 @@ body{
     justify-content: center;
     align-items:center;
     background-color:var(--DarkCyan);
-    
 }
 .main-container{
+    position:relative;
     display:flex;
     justify-content:center;
     align-items:center;
     background-color: var(--White);
-    width:25%;
-    height:40%;
+    width:27%;
+    height:41%;
     border-radius:20px;
+    z-index:2;
 }
 .card{
     width:100%;
+    height:100%;
     color:var(--DarkGray);
 }
 .card-header{
     position:relative;
-    top:-50px;
+    top:0;
     width:100%;
-    height:135px;
+    height:130px;
     background-image:url(../images/bg-pattern-card.svg);
     border-radius:20px 20px 0 0;
 }
@@ -76,10 +85,25 @@ body{
     left:50%;
     transform:translate(-50%,50%);
     border-radius:50%;
+    border:4px solid var(--White);
 }
 .card-info{
+    margin-top:4rem;
     text-align:center;
 }
+.card-info__personal,
+.card-info__nationality{
+    font-size:1.2rem;
+}
+.card-info__personal{
+    margin-bottom:.6rem;
+}
+.card-info__nationality{
+    margin-top:.5rem;
+    margin-bottom:2rem;
+    font-size:1rem;
+}
+.card
 .card-line{
     display:block;
     border:.1px solid var(--DarkGrayishBlue);
@@ -88,7 +112,7 @@ body{
 .card-analitycs{
     display:flex;
     justify-content: space-around;
-    padding-top:2rem;
+    padding:1rem;
 }
 .card-analitycs__num-followers,
 .card-analitycs__num-thumbs-up,
@@ -98,6 +122,7 @@ body{
     flex-direction: column;
     align-items:center;
 }
+
 
 
 
