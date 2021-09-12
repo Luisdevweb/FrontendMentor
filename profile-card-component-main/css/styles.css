@@ -8,27 +8,41 @@
     /*Fonts Colors*/
     --DarkGray: hsl(0, 0%, 59%);
 }
+.fw-400{
+    font-weight:400;
+}
+.fw-700{
+    font-weight:700;
+}
+.color-dark{
+   color:var(--VeryDarkDesaturatedBlue);
+}
 body{
     margin:0;
     font-size: 18px;
     font-family: 'Kumbh Sans', sans-serif; 
     overflow:hidden;
+    color:var(--DarkGrayishBlue);
+}
+.main::after,
+.main::before
+{
+    position: absolute;
 }
 .main::before{
     content:url("../images/bg-pattern-top.svg");
-    position:absolute;
     top:-33rem;
     left:-12rem;
 }
 .main::after{
     content:url("../images/bg-pattern-bottom.svg");
-    position:absolute;
     top:30rem;
     right:-15rem;
   
 }
 .main{
     height:100vh; 
+    width:100vw;
     display:flex;
     justify-content: center;
     align-items:center;
@@ -41,9 +55,50 @@ body{
     align-items:center;
     background-color: var(--White);
     width:25%;
-    height:45%;
-    border-radius:10px;
+    height:40%;
+    border-radius:20px;
 }
+.card{
+    width:100%;
+    color:var(--DarkGray);
+}
+.card-header{
+    position:relative;
+    top:-50px;
+    width:100%;
+    height:135px;
+    background-image:url(../images/bg-pattern-card.svg);
+    border-radius:20px 20px 0 0;
+}
+.card-header__img{
+    position:absolute;
+    bottom:0;
+    left:50%;
+    transform:translate(-50%,50%);
+    border-radius:50%;
+}
+.card-info{
+    text-align:center;
+}
+.card-line{
+    display:block;
+    border:.1px solid var(--DarkGrayishBlue);
+    opacity:30%;
+}
+.card-analitycs{
+    display:flex;
+    justify-content: space-around;
+    padding-top:2rem;
+}
+.card-analitycs__num-followers,
+.card-analitycs__num-thumbs-up,
+.card-analitycs__num-photos
+{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+
 
 
 
