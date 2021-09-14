@@ -122,7 +122,43 @@ body{
     flex-direction: column;
     align-items:center;
 }
-
+/*Tablets 1024px*/
+@media screen and (max-width:1030px){
+    .main-container{
+        width:35%;
+    }
+}
+/*Tablets 800px*/
+@media screen and (max-width:820px){
+    .main-container{
+        width:35%;
+        height:40%;
+    }
+}
+/*tablets 60px*/
+@media screen and (max-width:650px){
+    .main-container{
+        width:45%;
+        height:40%;
+    }
+}
+/*Mobile 375px*/
+@media screen and (max-width:450px){
+    .main::before
+    {
+        left:-48rem;
+    }
+    .main::after{
+        top:15rem;
+        right:-47rem;
+    }
+    .main-container{
+        width:90%;
+        height:61%;
+        min-height:375px;
+        max-height:400px;
+    }
+}
 
 
 
@@ -139,6 +175,8 @@ body{
 
 
 .attribution{
+    position:fixed;
+    bottom:0;
     background-color: #333;
     text-align:center;
     font-size:15px;
