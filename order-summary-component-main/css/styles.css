@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+:root{
+    /*Primary*/
+    --PaleBlue:hsl(225, 100%, 94%);
+    --BrightBlue:hsl(245, 75%, 52%);
+    /*Neutral*/
+    --VeryPaleBlue: hsl(225, 100%, 98%);
+    --DesaturatedBlue: hsl(224, 23%, 55%);
+    --DarkBlue: hsl(223, 47%, 23%);
+}
+*{
+    box-sizing:border-box;
+}
+body{
+    margin:0;
+    font-size:16px;
+    background-color:var(--PaleBlue);
+    font-family: 'Red Hat Display', sans-serif;
+}
+/*styles Mobile*/ 
+.main{
+    height:100vh;
+    width:85%;
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    /* align-items: center; */
+}
+.main-container{
+    width:100%;
+    min-height:420px;
+    max-height:750px;
+    border-radius: 20px;
+    background-color:var(--VeryPaleBlue);
+}
+.card{
+    width:100%;
+    height:100%;
+    border:2px solid var(--PaleBlue);
+    border-radius:20px;
+    color:var(--DesaturatedBlue);
+}
+.card-header{
+    height:25%;
+    width:100%;
+    background-image: url("../images/illustration-hero.svg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center left;
+    border-radius:20px 20px 0 0 ;
+}
+.card-body{
+    padding:0 1.6rem;
+    text-align:center;
+    font-size:1rem;
+    font-weight: 500;
+}
+.card-body__summary h2{
+    font-weight: 900;
+    color:var(--DarkBlue);
+}
+/*section subscription*/
+.card-body__subs{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.card-body__subs-details{
+    margin-right:1.5rem;
+}
+.card-body__subs-details__plan{
+    font-weight: 700;
+    color:var(--DarkBlue);
+    margin-top:.5rem;
+    margin-bottom:0;
+
+}
+.card-body__subs-details__price{
+    margin-top:.3rem;
+}
+.card-body__changesubs{
+    margin-left:.3rem;
+}
+.card-body__changesubs__button{
+    font-size:.9rem;
+    color:var(--BrightBlue);
+}
+/*section  card footer*/
+.card-footer{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+.card-footer a{
+    width:85%;
+    padding:.7rem;
+    text-align:center;
+    text-decoration:none;
+    font-weight:700;
+    font-size:.9rem;
+    border-radius:6px;
+    color:var(--DesaturatedBlue);
+}
+.card-footer a:hover{
+    cursor:pointer;
+    background-color:var(--BrightBlue);
+    color:var(--VeryPaleBlue);
+    font-weight:900;
+}
