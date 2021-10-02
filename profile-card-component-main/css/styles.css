@@ -4,10 +4,10 @@
     --VeryDarkDesaturatedBlue: hsl(229, 23%, 23%);
     --DarkGrayishBlue: hsl(227, 10%, 46%);
     --White:hsl(0, 0%, 100%);
-
     /*Fonts Colors*/
     --DarkGray: hsl(0, 0%, 59%);
 }
+/**Utilities**/
 .fw-400{
     font-weight:400;
 }
@@ -55,7 +55,7 @@ body{
     align-items:center;
     background-color:var(--DarkCyan);
 }
-.main-container{
+.main__inner{
     position:relative;
     display:flex;
     justify-content:center;
@@ -71,7 +71,7 @@ body{
     height:100%;
     color:var(--DarkGray);
 }
-.card-header{
+.card__header{
     position:relative;
     top:0;
     width:100%;
@@ -79,7 +79,7 @@ body{
     background-image:url(../images/bg-pattern-card.svg);
     border-radius:20px 20px 0 0;
 }
-.card-header__img{
+.card__img{
     position:absolute;
     bottom:0;
     left:50%;
@@ -87,36 +87,36 @@ body{
     border-radius:50%;
     border:4px solid var(--White);
 }
-.card-info{
+.card__info{
     margin-top:4rem;
     text-align:center;
 }
-.card-info__personal,
-.card-info__nationality{
+.card__name,
+.card__country{
     font-size:1.2rem;
 }
-.card-info__personal{
+.card__name{
     margin-bottom:.6rem;
 }
-.card-info__nationality{
+.card__country{
     margin-top:.5rem;
     margin-bottom:2rem;
     font-size:1rem;
 }
-.card
-.card-line{
+
+.card__line{
     display:block;
     border:.1px solid var(--DarkGrayishBlue);
     opacity:30%;
 }
-.card-analitycs{
+.card__analitycs{
     display:flex;
     justify-content: space-around;
     padding:1rem;
 }
-.card-analitycs__num-followers,
-.card-analitycs__num-thumbs-up,
-.card-analitycs__num-photos
+.card__num-followers,
+.card__num-thumbs-up,
+.card__num-photos
 {
     display:flex;
     flex-direction: column;
@@ -124,20 +124,20 @@ body{
 }
 /*Tablets 1024px*/
 @media screen and (max-width:1030px){
-    .main-container{
+    .main__inner{
         width:35%;
     }
 }
 /*Tablets 800px*/
 @media screen and (max-width:820px){
-    .main-container{
+    .main__inner{
         width:35%;
         height:40%;
     }
 }
 /*tablets 60px*/
 @media screen and (max-width:650px){
-    .main-container{
+    .main__inner{
         width:45%;
         height:40%;
     }
@@ -152,7 +152,7 @@ body{
         top:15rem;
         right:-47rem;
     }
-    .main-container{
+    .main__inner{
         width:90%;
         height:61%;
         min-height:375px;
