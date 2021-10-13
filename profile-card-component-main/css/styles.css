@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+/*** variables***/
 :root{
     --DarkCyan: hsl(185, 75%, 39%);
     --VeryDarkDesaturatedBlue: hsl(229, 23%, 23%);
     --DarkGrayishBlue: hsl(227, 10%, 46%);
     --White:hsl(0, 0%, 100%);
-    /*Fonts Colors*/
     --DarkGray: hsl(0, 0%, 59%);
+}
+/**** General ***/
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
 }
 /**Utilities**/
 .fw-400{
@@ -14,21 +20,22 @@
 .fw-700{
     font-weight:700;
 }
-.fz-21{
+.fz-m{
     font-size:1.2rem;
 }
-.fz-16{
+.fz-s{
     font-size:.9rem;
 }
 .color-dark{
    color:var(--VeryDarkDesaturatedBlue);
 }
+/**** styles body***/
 body{
     margin:0;
     font-size: 18px;
     font-family: 'Kumbh Sans', sans-serif; 
-    overflow:hidden;
     color:var(--DarkGrayishBlue);
+    overflow:hidden;
 }
 .main::after,
 .main::before
@@ -47,6 +54,16 @@ body{
     right:-15rem;
   
 }
+@media screen and (max-width:500px){
+    .main::before{
+        top:-28rem;
+        left:-48rem;
+    }
+    .main::after{
+        top:15rem;
+        right:-45rem;
+    }
+}
 .main{
     height:100vh; 
     width:100vw;
@@ -61,8 +78,9 @@ body{
     justify-content:center;
     align-items:center;
     background-color: var(--White);
-    width:27%;
-    height:41%;
+    min-width:320px;
+    max-width:400px;
+    height:375px;
     border-radius:20px;
     z-index:2;
 }
@@ -93,94 +111,22 @@ body{
 }
 .card__name,
 .card__country{
-    font-size:1.2rem;
+    font-size:1rem;
 }
 .card__name{
     margin-bottom:.6rem;
 }
-.card__country{
-    margin-top:.5rem;
-    margin-bottom:2rem;
-    font-size:1rem;
-}
-
-.card__line{
-    display:block;
-    border:.1px solid var(--DarkGrayishBlue);
-    opacity:30%;
-}
-.card__analitycs{
+.card__stats{
     display:flex;
+    border-top:1px solid var(--DarkGray);
     justify-content: space-around;
-    padding:1rem;
+    padding-top: 1rem;
 }
-.card__num-followers,
-.card__num-thumbs-up,
-.card__num-photos
+.card__followers,
+.card__thumbs-up,
+.card__photos
 {
     display:flex;
     flex-direction: column;
     align-items:center;
-}
-/*Tablets 1024px*/
-@media screen and (max-width:1030px){
-    .main__inner{
-        width:35%;
-    }
-}
-/*Tablets 800px*/
-@media screen and (max-width:820px){
-    .main__inner{
-        width:35%;
-        height:40%;
-    }
-}
-/*tablets 60px*/
-@media screen and (max-width:650px){
-    .main__inner{
-        width:45%;
-        height:40%;
-    }
-}
-/*Mobile 375px*/
-@media screen and (max-width:450px){
-    .main::before
-    {
-        left:-48rem;
-    }
-    .main::after{
-        top:15rem;
-        right:-47rem;
-    }
-    .main__inner{
-        width:90%;
-        height:61%;
-        min-height:375px;
-        max-height:400px;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.attribution{
-    position:fixed;
-    bottom:0;
-    background-color: #333;
-    text-align:center;
-    font-size:15px;
-}
-.attribution a{
-    text-decoration: none;
 }
