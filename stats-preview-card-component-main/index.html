@@ -11,21 +11,28 @@
   <main class="main">
    <div class="main__inner">
       <article class="card"> 
-          <header class="card__header">
-            <img class="card__img" src="images/image-header-mobile.jpg" alt="img">
-          </header>
-          <div class="card__body">
-            <h2 class="card__title"> Get <span class="card__word">insights</span> that help your business grow.</h2>
-            <p class="card__text">
-              Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.
-            </p>
-          </div>
-          <div class="card__footer">
-              <div class="card__stat"> 
-                <p class="card__item"><span class="card__num">10k+</span> companies</p>
-                <p class="card__item"><span class="card__num">314</span> templates </p>
-                <p class="card__item"><span class="card__num">12m+</span> queries </p>
-              </div>
+         <div class="column column--right">
+            <header class="card__header">
+              <picture class="card__picture">
+                <source srcset="images/image-header-desktop.jpg" media="(min-width:1000px)">
+                <img  class="card__img" src="images/image-header-mobile.jpg" alt="img">
+              </picture>
+            </header>
+         </div>
+          <div class="column column--left">
+            <div class="card__body">
+              <h2 class="card__title"> Get <span class="card__word">insights</span> that help your business grow.</h2>
+              <p class="card__text">
+                Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.
+              </p>
+            </div>
+            <div class="card__footer">
+                <div class="card__stat"> 
+                  <p class="card__item"><span class="card__num">10k+</span> companies</p>
+                  <p class="card__item"><span class="card__num">314</span> templates </p>
+                  <p class="card__item"><span class="card__num">12m+</span> queries </p>
+                </div>
+            </div>
           </div>
       </article>
    </div>

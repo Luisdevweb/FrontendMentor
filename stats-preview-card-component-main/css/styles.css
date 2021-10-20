@@ -2,7 +2,7 @@
 :root{
     --main-bg:hsl(233, 47%, 7%);
     --card-bg:hsl(244, 38%, 16%);
-    --violet-color: hsl(277, 64%, 61%);
+    --violet: hsl(277, 64%, 61%);
     --white:hsl(0, 0%, 100%);
 }
 html{
@@ -41,28 +41,80 @@ body{
     border:1px solid var(--card-bg);
     border-radius:.5em;
 }
+@media(min-width:1000px){
+    .card{
+        display:flex;
+        width:80%;
+        max-width:1400px;
+    }
+    .column{
+        flex-basis: 50%;
+    }
+    .column--right{
+        order:2;
+    }
+    .column--left{
+        order:-1;
+        display:flex;
+        flex-direction:column;
+        justify-content: space-around;
+        padding:1em 5em;
+    }
+}
 .card__header{
     height:160px;
     border-radius:.5em .5em 0 0;
+    background-color: var(--violet); 
+}
+.card__picture{
+    height:inherit;
+    border-radius: inherit;
 }
 .card__img{
     width:100%;
     height:inherit;
     object-fit:fill;
-    border-radius:.5em .5em 0 0;
+    border-radius:inherit;
+    opacity: 50%;   
+}
+@media(min-width:1000px){
+    .card__header{
+        height:100%;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: .5em;
+    }
 }
 .card__body{
     padding:0 1.6em;
     text-align:center;
 }
+@media(min-width:1000px){
+    .card__body{
+        display:flex;
+        flex-direction:column; 
+    }
+}
 .card__word{
-    color:var(--violet-color);
+    color:var(--violet);
 }
 .card__text{
    font-family  : 'Lexend Deca', sans-serif;
    font-size:.85em;
    font-weight:400;
    color:hsla(0, 0%, 100%, 0.75);
+}
+@media(min-width:1000px) {
+    .card__title,
+    .card__text{
+        text-align: left;
+    }
+    .card__title{
+        font-size: 2.1rem;
+    }
+    .card__text{
+        font-size:.9rem;
+        line-height: 1.8;
+    }
 }
 .card__footer{
     padding:.5em 7em;
@@ -77,6 +129,19 @@ body{
     text-transform:uppercase;
     color:hsla(0, 0%, 100%, 0.6);
     font-size:.7em;
+}
+@media(min-width:1000px){
+    .card__footer{
+        padding:0 3em 2em 1.6em;
+    }
+    .card__stat{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .card__item{
+        inline-size: 80px;
+        text-align:left;
+    }
 }
 .card__num{
     font-size:1.5em;
