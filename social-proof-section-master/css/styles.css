@@ -59,6 +59,14 @@ body{
         left:0;
     }
 }
+@media screen and (min-width:1200px){
+    .social-proof::before{
+        background-image:url(../images/bg-pattern-top-desktop.svg);
+        left:-15rem;
+        height:30rem;
+        width:50rem;
+    }   
+}
 .social-proof::after{
     content:"";
     position:absolute;
@@ -76,6 +84,14 @@ body{
         left:50%;
         transform:translate(-50%,50%);
     }
+}
+@media screen and (min-width:1200px){
+    .social-proof::after{
+        background-image:url(../images/bg-pattern-bottom-desktop.svg);
+        top:10%;
+        height:30rem;
+        width:45rem;
+    }   
 }
 .header{
     text-align: center;
@@ -114,6 +130,9 @@ body{
     }
 }
 @media screen and (min-width:992px){
+    .header{
+        margin-left:.5rem;
+    }
     .block-one{
         display:flex;
         align-items: flex-end;
@@ -160,14 +179,25 @@ body{
 }
 @media screen and (min-width:992px){
     .rating--card-1{
-        margin-left:0;
+        margin-left:-1rem;
     }
     .rating--card-2{
-        margin-left:4rem;
+        margin-left:1rem;
     }
     .rating--card-3{
-        margin-left:8rem;
+        margin-left:3rem;
     }
+}
+@media screen and (min-width:1200px){
+        .rating--card-1{
+            margin-left:0rem;
+        }
+        .rating--card-2{
+            margin-left:4rem;
+        }
+        .rating--card-3{
+            margin-left:8rem;
+        }
 }
 .bottom-space{
     margin-bottom: 3em;
