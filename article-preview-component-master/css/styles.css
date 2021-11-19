@@ -19,13 +19,33 @@ body{
     height:100vh;   
 }
 .card{
-    min-width:300px;
+    width:320px;
     margin-left: 1.2em;
     margin-right: 1.2em;
     margin-top:2em;
     box-shadow: 1px 2px 8px 1px var(--grayishblue);
     border-radius:1em;
-    overflow:hidden;    
+    overflow-X:hidden;    
+}
+@media screen and (min-width:576px){
+    .card{
+        width:520px;
+        display:flex;
+        margin-right: 0;
+        overflow-X:visible;
+    }
+    .column{
+        display:flex;
+        flex-direction: column;
+    }
+    .column--right{
+        flex-basis: calc( 55% - 1rem);
+    }
+}
+@media screen and (min-width:796px){
+    .card{
+        width:720px;
+    }
 }
 .container-img{
     width:100%;
@@ -39,8 +59,29 @@ body{
     object-fit: cover;
     border-radius:1em 1em 0 0;
 }
+@media screen and (min-width:576px){
+    .container-img{
+        width:40%;
+        height:320px;
+    }
+    .card__img{
+        height:100%;
+        border-top-right-radius:0;
+    }
+}
+@media screen and (min-width:796px){
+    .container-img{
+        width:45%;
+        height:280px;
+    }
+}
 .card__body{
     padding:1.6em 2.5em;
+}
+@media screen and (min-width:576px){
+    .card__body{
+        padding-right:.5em;
+    }
 }
 .card__title{
     font-size: 1rem;
@@ -60,6 +101,11 @@ body{
     align-items: center;
     padding: .4em 2.3em;
     padding-bottom:.5em;
+}
+@media screen and (min-width:576px){
+    .profile{
+        padding-right:.5em;
+    }
 }
 .profile__photo{
     border-radius: 50%;
@@ -87,6 +133,17 @@ body{
     padding:.6em;
     margin-right: 1em;
 }
+@media screen and (min-width:576px){
+    .profile__icon-share{
+        right:0;
+        margin-right:0;
+    }
+}
+@media screen and (min-width:796px){
+    .profile__icon-share{
+        right:.8em;
+    }
+}
 .social-icons{
     width:100%;
     position:absolute;
@@ -97,8 +154,26 @@ body{
     height:4.4rem;
     left:0;
     bottom:0;
-    transform: translateX(-100%);
+    transform: translateX(110%);
     transition:transform .2s ease-in-out;
+}
+
+@media screen and (min-width:576px){
+    .social-icons{
+        border-radius:1em;
+        transform: unset;
+        transition:none;
+        left:8rem;
+        bottom:4rem;
+        z-index:10;
+        height:2.8rem;
+        width:15.6rem;
+    }
+}
+@media screen and (min-width:796px){
+    .social-icons{
+        left:14rem;
+    }
 }
 .social-icons__text{
     margin-left:2.4em;
