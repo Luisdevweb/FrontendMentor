@@ -162,17 +162,42 @@ body{
     .social-icons{
         border-radius:1em;
         transform: unset;
-        transition:none;
-        left:8rem;
-        bottom:4rem;
+        left:5rem;
+        bottom:5.2rem;
         z-index:10;
         height:2.8rem;
         width:15.6rem;
+        visibility: hidden;
+    }
+    .social-icons::after{
+        content:"";
+        position:absolute;
+        width:15px;
+        height:15px;
+        bottom:-8px;
+        left:66%;
+        background-color:var(--verydarkgrayishblue);
+        transform:rotate(45deg);
     }
 }
 @media screen and (min-width:796px){
     .social-icons{
+        left:10rem;
+    }
+    .social-icons::after{
+        content:"";
+        bottom:-8px;
+        left:72%;
+    }
+}
+@media screen and (min-width:992px){
+    .social-icons{
         left:14rem;
+    }
+    .social-icons::after{
+        content:"";
+        bottom:-8px;
+        left:46%;
     }
 }
 .social-icons__text{
@@ -187,4 +212,7 @@ body{
 }
 .social-icons--translate{
     transform: translateX(0);
+}
+.social-icons--visible{
+    visibility:visible;
 }
