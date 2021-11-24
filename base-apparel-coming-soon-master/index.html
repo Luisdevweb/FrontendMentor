@@ -11,31 +11,34 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  
   <div class="wrapper">
-    <article class="notice">
-      <header class="notice__header">
-        <img class="logo" src="images/logo.svg" alt="logo">
-      </header>
-      <div class="hero">
-        <img class="hero__img" src="images/hero-mobile.jpg" alt="photo-girl">
-      </div>
-      <section class="notice__body">
-          <h2 class="notice__title title"><span class="title__word">We're</span> coming soon</h2>
-          <p class="notice__text"> Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
-          <form action="" class="finder">
-            <label for="finder"> 
-              <div class="icon-container">
-                <img class="finder__icon" src="images/icon-arrow.svg" alt="arrow">
-              </div> 
-            </label>
-            <input class="finder__input" type="search" id="finder" placeholder="Email Address" />
-          </form>
+      <main class="notice">
+        <header class="notice__header">
+          <img class="logo" src="images/logo.svg" alt="logo">
+        </header>
+        <picture class="hero">
+          <source srcset="images/hero-desktop.jpg" media="(min-width: 992px)">
+          <img class="hero__img" src="images/hero-mobile.jpg" alt="photo-girl">
+        </picture>
+        <section class="notice__body">
+            <h2 class="notice__title title"><span class="title__word">We're</span> coming soon</h2>
+            <p class="notice__text"> Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
+            <form action="" class="finder notice__finder">
+              <label class="finder__label" for="finder"> 
+                <div class="icon-container">
+                  <img class="finder__icon" src="images/icon-arrow.svg" alt="arrow">
+                </div> 
+              </label>
+              <input class="finder__input" type="search" id="finder" placeholder="Email Address" />
+            </form>
         </section>
-    </article>
+        </main>
   </div>
+
  
 
-  <footer style="position:fixed;left:0;bottom:0;background-color:rgb(88, 85, 85);font-weight: 300;">
+  <footer style="position:fixed;z-index:20;left:0;bottom:0;background-color:rgb(88, 85, 85);font-weight: 300">
     <p style="margin:0;font-size: .8rem; color:rgb(197, 186, 186)">
       Challenge by <a style="text-decoration:none;color:rgb(95, 204, 144)" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by luismac09.
     </p>
