@@ -1,0 +1,95 @@
+:root{
+    --desaturatedred: hsl(0, 36%, 70%);
+    --softred: hsl(0, 93%, 68%);
+    --darkgrayishred: hsl(0, 6%, 24%);
+    --background-gradient:linear-gradient(135deg, hsl(0, 0%, 100%),hsl(0, 100%, 98%));
+}
+body{
+    margin:0;
+    font-size:16px;
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: var(--background-gradient);
+}
+.wrapper{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height: 100%;
+}
+.notice{
+    width: 100%;
+}
+.notice__header{
+    padding:1.5em 1.8em;
+}
+.logo{
+    width:100px;
+}
+.hero{
+    height:190px;
+}
+.hero__img{
+    display:block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.notice__body{
+    padding:1.5em 1.8em;
+}
+.notice__title{
+    margin-top:0;
+    margin-bottom:.5em;
+    text-align: center;
+    padding-top:.5em;
+}
+.title{
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .38em;
+    font-weight: 600;
+    opacity:80%;
+}
+.title__word{
+    font-weight: 300;
+    color: rgb(219, 188, 188);
+}
+.notice__text{
+    text-align: center;
+    color: rgb(219, 188, 188,.98);
+    font-size: .85rem;
+    margin:0;
+    font-weight: 600;
+    line-height: 1.4;
+}
+.finder{
+    width:100%;
+    margin:1em auto;
+}
+.finder__input{
+    position:relative;
+    display: block;
+    width: 98%;
+    padding:1em 1.2em;
+    border-radius: 2em;
+    opacity: 50%;
+    border:.5px solid rgb(187, 183, 183);
+}
+.icon-container{
+    position: absolute;
+    top:.9.2em;
+    right:2.2em;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    border-radius: 2em;
+    padding:.7em 1.5em;
+    width: 15px;
+    height:25px;
+    z-index:10;
+}
+.finder__icon{
+    width:inherit;
+}
