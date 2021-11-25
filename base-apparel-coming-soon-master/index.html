@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <script src="js/scripts.js" defer></script>
 </head>
 <body>
   
@@ -24,16 +25,16 @@
         <section class="notice__body">
             <h2 class="notice__title title"><span class="title__word">We're</span> coming soon</h2>
             <p class="notice__text"> Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
-            <form action="" class="finder notice__finder">
-              <label class="finder__label" for="finder"> 
-                <div class="icon-container">
-                  <img class="finder__icon" src="images/icon-arrow.svg" alt="arrow">
-                </div> 
-              </label>
-              <input class="finder__input" type="search" id="finder" placeholder="Email Address" />
+            <form id="form" class="form">
+              <button id="button" class="button  form__button">
+                <img class="icon-arrow "  src="images/icon-arrow.svg" alt="arrow">
+              </button>
+              <img class="icon-error" id="icon-error" src="images/icon-error.svg" alt="icon-error">
+              <input class="form__input" type="email" id="email" placeholder="Email Address" />
+              <span id="msg-error" class="msg-error">Please provide a valid email</span>
             </form>
         </section>
-        </main>
+      </main>
   </div>
 
  

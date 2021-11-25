@@ -2,13 +2,11 @@
     --desaturatedred: hsl(0, 36%, 70%);
     --softred: hsl(0, 93%, 68%);
     --darkgrayishred: hsl(0, 6%, 24%);
-    --background-gradient:linear-gradient(135deg, hsl(0, 0%, 100%),hsl(0, 100%, 98%));
 }
 body{
     margin:0;
     font-size:16px;
     font-family: 'Josefin Sans', sans-serif;
-    background-image: var(--background-gradient);
 }
 .wrapper{
     height: 100%;
@@ -32,26 +30,30 @@ body{
     .notice{
         position:relative;
         height: 100vh;
+        background-image: linear-gradient(135deg, hsl(0, 0%, 100%),hsl(0, 100%, 98%));
+    }
+    .notice::after{
+        content:"";
+        position:absolute;
+        width:50%;
+        height:100vh;
+        background-image: url(../images/bg-pattern-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        bottom:4em;
+        left:0;
+        z-index:1;
     }
     .notice__header{
         position:absolute;
         width:300px;
-        left:8%;
+        left:13%;
         top:5%;
+        z-index:2
     }
 }
 .hero{
     height:280px;
-}
-@media screen and (min-width:576px){
-    .hero{
-        height:400px;
-    }
-}
-@media screen and (min-width:796px){
-    .hero{
-        height:500px;
-    }
 }
 
 .hero__img{
@@ -60,12 +62,21 @@ body{
     height: 100%;
     object-fit: cover;
 }
+@media screen and (min-width:576px){
+    .hero{
+        height:500px;
+    }
+    .hero__img{
+        height: inherit;
+    }
+}
 @media screen and (min-width:992px){
     .hero{
         position: absolute;
-        width:50%;
+        width:42%;
         height:100vh;
         right: 0;
+        z-index:2;
     }
     .hero__img{
         object-fit: unset;
@@ -76,21 +87,24 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom:5em;
 }
 @media screen and (min-width:576px){
     .notice__body{
         width:400px;
         margin-right: auto;
         margin-left: auto;
+        margin-bottom: 0;
     }
 }
 @media screen and (min-width:992px){
     .notice__body{
         position:absolute;
-        width:400px;
+        width:420px;
         top:30%;
-        left:10%;
+        left:15%;
         padding:0;
+        z-index:2
     }
 }
 .notice__title{
@@ -105,6 +119,7 @@ body{
     letter-spacing: .38em;
     font-weight: 600;
     opacity:80%;
+    line-height: 1.1;
 }
 .title__word{
     font-weight: 300;
@@ -133,47 +148,78 @@ body{
         text-align: left;
     }
     .title{
-        font-size: 3.5rem;
+        font-size: 3.6rem;
     }
     .notice__text{
         text-align: left;
-        font-size: 1.2rem;
+        margin-bottom: 3em;
     }
 }
 
-.notice__finder{
-    margin-bottom: 5em;
-}
 /***finder component*/
-.finder{
+.form{
     position:relative;
     width:100%;
 }
-.finder__input{
+.form__input{
     position:absolute;
-    display: block;
     width: 100%;
-    padding:1.1em 0 1.1em 1.2em;
+    padding:1.1em 0 1.1em 1.8em;
     border-radius: 2em;
     opacity: 50%;
-    border:.5px solid rgb(187, 183, 183);
+    border:.9px solid rgb(187, 183, 183,.5);
 }
-.finder__label{
+.form__input--border-red{
+    border:2px solid red ;
+}
+.form__button{
     position: absolute;
     top:0;
-    right:0;
+    right:-2em;
     z-index: 10;
-}
-.icon-container{
-    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
     display: flex;
-    justify-self: center;
+    justify-content: center;
     align-items: center;
     border-radius: 2em;
     padding:.7em 1.5em;
-    width: 15px;
-    height:25px;
 }
-.finder__icon{
-    width:inherit;
+.button{
+    width: 70px;
+    height:46px;
+    cursor:pointer;
+    outline:none;
+    border:none;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+.button--opacity{
+    opacity:60%;
+}
+.button--grow{
+    width:80px;
+    height:46px;
+}
+.button--shadow{
+    box-shadow:1px 5px 15px 1px rgb(182, 94, 94);
+}
+.icon-arrow{
+    width:20px;
+    height: 25px;
+}
+.icon-error{
+    position:absolute;
+    top:.75em;
+    right:4em;
+    visibility: hidden;
+}
+.msg-error{
+    position: absolute;
+    color:red;
+    font-size: .8rem;
+    top:4em;
+    left:2em;
+    visibility:hidden;
+}
+.icon-error--visible,
+.msg-error--visible{
+    visibility: visible;
 }
