@@ -6,11 +6,18 @@ const messageError=document.getElementById("msg-error");
 form.addEventListener("click",e=>{
     e.preventDefault();
     if(e.target.classList.contains("form__button") || e.target.classList.contains("icon-arrow")){
-        button.classList.toggle("button--opacity")
-        button.classList.toggle("button--grow")
-        button.classList.toggle("button--shadow")
-        email.classList.toggle("form__input--border-red")
-        ValidationEmail(email.value);
+        if(email.value===""){
+            messageError.classList.add("msg-error--visible")
+            messageError.innerText="Please Enter a email"
+            iconError.classList.remove("icon-error--visible")
+            email.classList.remove("form__input--border-red")
+        }
+        else{
+            button.classList.toggle("button--opacity")
+            button.classList.toggle("button--grow")
+            button.classList.toggle("button--shadow")
+            ValidationEmail(email.value);
+        }
     }
 })
 
@@ -23,8 +30,11 @@ const ValidationEmail=(entry)=>{
     }
     else{
         console.log("email no valido")
+        messageError.innerText="Please provide a valid email"
+        email.classList.add("form__input--border-red")
         iconError.classList.add("icon-error--visible")
         messageError.classList.add("msg-error--visible")
+     
 
     }
 }

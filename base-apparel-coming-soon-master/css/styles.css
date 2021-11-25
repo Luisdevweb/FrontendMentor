@@ -168,9 +168,10 @@ body{
     border-radius: 2em;
     opacity: 50%;
     border:.9px solid rgb(187, 183, 183,.5);
+    z-index:8 ;
 }
 .form__input--border-red{
-    border:2px solid red ;
+    border:2px solid rgb(240, 73, 73) ;
 }
 .form__button{
     position: absolute;
@@ -185,7 +186,7 @@ body{
 }
 .button{
     width: 70px;
-    height:46px;
+    height:49px;
     cursor:pointer;
     outline:none;
     border:none;
@@ -196,10 +197,10 @@ body{
 }
 .button--grow{
     width:80px;
-    height:46px;
 }
 .button--shadow{
     box-shadow:1px 5px 15px 1px rgb(182, 94, 94);
+    border:3px solid rgba(218, 129, 129, 0.8);
 }
 .icon-arrow{
     width:20px;
