@@ -1,0 +1,126 @@
+:root{
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg:hsl(216, 50%, 16%);
+    --line-color: hsl(215, 32%, 27%);
+    --white:hsl(0, 0%, 100%);
+    --softblue:hsl(215, 51%, 70%);
+    --cyan:hsl(178, 100%, 50%);
+}
+
+body{
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+}
+img{
+    max-width:100%;
+    display: block;
+}
+p{
+    font-size: 18px;
+    color:var(--softblue);
+    opacity: 70%;
+}
+.no-margin{
+    margin:0;
+}
+.main{
+    padding: 3.5em 0;
+    height: 100%;
+    background-color: var(--main-bg);
+}
+.wrapper{
+    height:100vh;
+}
+@media screen and (min-width:576px){
+    .main{
+        padding:0;
+    }
+    .wrapper{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.card{
+    width:330px;
+    padding:1.8em 0;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid var(--main-bg);
+    border-radius:.8em ;
+    background-color: var(--card-bg); 
+}
+
+.card__figure{
+    position:relative;
+    width: 280px;
+    margin:0 auto;
+}
+.card__img{
+    width: inherit;
+    border-radius: .6em;
+    object-fit: cover;
+}
+.icon-view{
+    position:absolute;
+    top:6em;
+    left:50%;
+    transform: translate(-50%,50%);
+    visibility: hidden;
+}
+.card__main-content{
+    padding:0 1.2em;
+}
+.card__title{
+    margin-bottom:.5em;
+}
+.title{
+    color:var(--white);
+}
+.card__description{
+    margin-top: 0;
+}
+.row{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: .8em;
+}
+.row--footer{
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 0;
+}
+.column{
+    display: flex;
+    align-items: center;
+}
+.icon{
+    margin-right: .5em;
+}
+.card__eth,
+.card__days{
+    font-weight: 600;
+    font-size: 1em;
+}
+.card__eth{
+    color:var(--cyan);
+}
+.card__footer{
+    border-top:1px solid var(--line-color);
+    padding-top: 1em;
+}
+.card__avatar{
+    width:32px;
+    border-radius:50%;
+    border:2px solid var(--white);
+    margin-right:1.1em;
+}
+.card__copy{
+    font-size: 1em;
+    font-weight: 600;
+}
+.card__creator{
+    color:var(--white);
+    font-weight: 400; 
+}
