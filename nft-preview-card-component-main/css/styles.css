@@ -55,11 +55,20 @@ p{
     position:relative;
     width: 280px;
     margin:0 auto;
+    border-radius: .6em;
 }
 .card__img{
     width: inherit;
     border-radius: .6em;
     object-fit: cover;
+}
+.card__img:hover{
+    opacity:50%;
+    cursor:pointer;
+}
+.card__figure:hover{
+    cursor: pointer;
+    background-color: var(--cyan); 
 }
 .icon-view{
     position:absolute;
@@ -68,14 +77,21 @@ p{
     transform: translate(-50%,50%);
     visibility: hidden;
 }
+.card__figure:hover .icon-view{
+    visibility: visible;
+}
 .card__main-content{
-    padding:0 1.2em;
+    padding:0 1.35em;
 }
 .card__title{
     margin-bottom:.5em;
 }
 .title{
     color:var(--white);
+}
+.title:hover{
+    color:var(--cyan);
+    cursor:pointer;
 }
 .card__description{
     margin-top: 0;
@@ -123,4 +139,8 @@ p{
 .card__creator{
     color:var(--white);
     font-weight: 400; 
+}
+.card__creator:hover{
+    color:var(--cyan);
+    cursor:pointer;
 }
