@@ -1,0 +1,129 @@
+:root{
+    --saturatedred:hsl(0, 100%, 74%);
+    --green:hsl(154, 59%, 51%);
+    --blue:hsl(248, 32%, 49%);
+    --darkblue:hsl(249, 10%, 26%);
+    --grayishblue:hsl(246, 25%, 77%);
+    --white:hsl(0, 0%, 100%);
+}
+body{
+    margin:0;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../images/bg-intro-mobile.png);
+    background-size: 18rem 100% ;
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+    background-color: var(--saturatedred);
+    height: 100vh;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro{
+    padding:1.5em 1em;
+}
+.intro__header{
+    text-align: center;
+    padding:0 1.4em;
+   
+}
+.intro__title{
+    color:var(--white);
+    font-size: 1.4rem;
+}
+.intro__body{
+    text-align: center;
+}
+.intro__text{
+    color: var(--white);
+    margin-bottom: 0;
+}
+.intro__signup{
+    padding:.6em .5em;
+    max-width:600px;
+}
+.phrase-container{
+    background-color:var(--blue);
+    text-align: center;
+    border-radius: .5em;
+    box-shadow: 0 6px 0 0 rgba(39, 39, 53, .3);
+    
+}
+.phrase{
+    padding-top: 1em;
+    font-size: .9rem;
+    color:var(--grayishblue);
+    font-weight: 500;
+    inline-size: 10rem;
+    block-size:3.5rem;
+    margin-right: auto;
+    margin-left: auto;
+    text-shadow: -3px 5px 8px var(--darkblue);
+}
+.phrase__accent{
+    color:var(--white);
+    font-weight: 600;
+}
+.intro__form{
+    padding:1em;
+    position:relative;
+}
+.form{
+    height:350px;
+    border-radius: .5em;
+    background-color: var(--white);
+    box-shadow: 0 6px 0 0 rgba(39, 39, 53, .3);
+}
+.form__field{
+    position:relative;
+}
+.form__label{
+    position:absolute;
+    left:1em;
+    top:1em;
+    color:var(--darkblue);
+    font-size: .8rem;
+    font-weight: 600;
+    opacity: 70%;
+}
+.form__input{
+    width: 100%;
+    display: block;
+    font-size: .8rem;
+    margin-bottom: 1em;
+    padding:1em 0;
+    border:1px solid var(--grayishblue);
+    border-radius: .1em;
+    font-weight: 600;
+    border-radius: .5em;
+}
+.form__input--submit{
+    width: 100%;
+    border:0; 
+    padding-left:2em; 
+    padding-right:2em;   
+    outline: none;
+    text-transform:uppercase;
+    color:var(--white);
+    background-color:var(--green);
+    box-shadow: 0 3px 0 0 rgb(94, 150, 109);
+}
+.agree{
+    position:absolute;
+    width:65%;
+    text-align:center;
+    font-size: .7em;
+    bottom:-5em;
+    left:50%;
+    transform: translate(-50%,50%);
+    margin:0;
+    color:var(--grayishblue);
+}
+.agree__link{
+    text-decoration: none;
+    color:var(--saturatedred);
+    font-weight: 500;
+}
