@@ -34,7 +34,5 @@ const ValidationEmail=(entry)=>{
         email.classList.add("form__input--border-red")
         iconError.classList.add("icon-error--visible")
         messageError.classList.add("msg-error--visible")
-     
-
     }
 }

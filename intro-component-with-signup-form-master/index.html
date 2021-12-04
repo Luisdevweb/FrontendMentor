@@ -9,8 +9,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script src="js/scripts.js" defer></script>
 </head>
-<body>
+<body class="bg-intro">
  <div class="wrapper">
     <main class="intro">
       <div class="row">
@@ -29,25 +30,33 @@
             <div class='phrase-container'>
               <p class="phrase"><span class="phrase__accent">Try it free 7 days</span> then $20/mo. thereafter</p>
             </div>
-            <form class="form intro__form" action="">
+            <form id="form" class="form intro__form" action="">
                 <div class="form__field">
                   <label class="form__label" for="firstname">First Name</label>
-                  <input class="form__input" type="text" id="firstname"/>
+                  <input class="form__input" type="text" id="firstname">
+                  <img class="error-icon" src="images/icon-error.svg" alt="error-icon">
+                  <span class="error-text" >First Name cannot be empty</span>
                 </div>
                 <div class="form__field">
-                  <label class="form__label" for="lastname">Last Name</label>
-                  <input class="form__input" type="text" id="lastname"/>
+                  <label class="form__label"  for="lastname">Last Name</label>
+                  <input class="form__input" type="text" id="lastname">
+                  <img class="error-icon" src="images/icon-error.svg" alt="error-icon">
+                  <span class="error-text" >Last Name cannot be empty</span>
                 </div>
                 <div class="form__field">
                   <label class="form__label" for="email">Email Address</label>
-                  <input class="form__input" type="email" id="email"/>
+                  <input class="form__input" type="email" id="email">
+                  <img class="error-icon" src="images/icon-error.svg" alt="error-icon">
+                  <span class="error-text" >Looks like this is not an email</span>
                 </div>
                 <div class="form__field">
-                  <label class="form__label" for="pass">Password</label>
-                  <input class="form__input" type="password" id="pass"/>
+                  <label class="form__label"  for="pass">Password</label>
+                  <input class="form__input" type="password" id="password">
+                  <img class="error-icon"  src="images/icon-error.svg" alt="error-icon">
+                  <span class="error-text" >password cannot be empty</span>
                 </div>
-                <div class="form__field">
-                  <input class="form__input form__input--submit" type="submit" value="Claim your free trial"/>
+                <div class="form__field form__field--mb0">
+                  <input class="form__submit" id="send" type="submit" value="Claim your free trial"/>
                 </div>
             </form>
             <p class="agree">By clicking the button, you are agreeing to our <a href="#" class="agree__link">Terms and Services</a></p>
