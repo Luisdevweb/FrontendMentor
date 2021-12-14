@@ -1,0 +1,98 @@
+:root {
+  --verydarkdesaturatedblue: hsl(238, 29%, 16%);
+  --softred: hsl(14, 88%, 65%);
+  --softviolet-bg: hsl(273, 75%, 66%);
+  --softblue-bg: hsl(240, 73%, 65%);
+  --verydarkgrayishblue-question: hsl(237, 12%, 33%);
+  --darkgrayishblue-answer: hsl(240, 6%, 50%);
+  --lightgrayishblue-line: hsl(240, 5%, 91%);
+  --white-bg-card: hsl(0, 0%, 100%);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 12px;
+  background-image: linear-gradient(
+    to bottom,
+    var(--softviolet-bg) 0%,
+    var(--softblue-bg) 100%
+  );
+}
+.faq-card {
+  margin-top: 10em;
+  margin-bottom: 0.8em;
+  width: 310px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--white-bg-card);
+  padding-bottom: 3em;
+  border: 0;
+  border-radius: 2em;
+}
+.img-container {
+  position: relative;
+  width: 100%;
+  height: 6rem;
+}
+.img-container::after {
+  position: absolute;
+  content: "";
+  background-image: url(../images/bg-pattern-mobile.svg);
+  background-repeat: no-repeat;
+  width: 250px;
+  height: 250px;
+  left: 2.2rem;
+}
+.faq-card__img {
+  position: absolute;
+  max-width: inherit;
+  height: 12rem;
+  top: -9.5em;
+  left: 9.5%;
+  transform: translateX(-50%, 50%);
+}
+.faq-card__header {
+  width: 100%;
+  text-align: center;
+  border-radius: 2em 2em 0 0;
+}
+.faq-card__title {
+  margin-bottom: 0.5em;
+  font-size: 2.1rem;
+}
+.faq-card__body {
+  padding: 1em 2em;
+}
+.faq-list {
+  list-style: none;
+  padding-left: 0;
+}
+.faq-list__item {
+  color: var(--verydarkgrayishblue-question);
+}
+.faq-card__content {
+  border-bottom: 1px solid var(--lightgrayishblue-line);
+}
+.faq-card__question {
+  position: relative;
+  font-size: 0.8rem;
+}
+.icon-container {
+  position: absolute;
+  right: 0;
+}
+.faq-card__answer {
+  color: var(--darkgrayishblue-answer);
+  max-height: 0;
+  visibility: hidden;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding-bottom: 2em;
+}
+.attribution__link {
+  color: hsl(228, 45%, 44%);
+}
