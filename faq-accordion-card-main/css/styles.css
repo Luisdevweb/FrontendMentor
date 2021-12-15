@@ -20,18 +20,52 @@ body {
     var(--softblue-bg) 100%
   );
 }
+@media screen and (min-width: 992px) {
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+}
 .faq-card {
-  margin-top: 10em;
-  margin-bottom: 0.8em;
   width: 310px;
+  margin-top: 25vh;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--white-bg-card);
-  padding-bottom: 3em;
+  padding-bottom: 2em;
   border: 0;
   border-radius: 2em;
 }
+@media screen and (min-width: 992px) {
+  .faq-card {
+    position: relative;
+    width: 750px;
+    margin: 0;
+    padding: 0;
+  }
+  .faq-card::before {
+    position: absolute;
+    content: "";
+    width: 150px;
+    height: 150px;
+    background-image: url(../images/illustration-box-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 8.3rem;
+    left: -5rem;
+    z-index: 20;
+  }
+  .row {
+    display: flex;
+  }
+  .column {
+    flex-basis: 50%;
+  }
+}
 .img-container {
+  display: block;
   position: relative;
   width: 100%;
   height: 6rem;
@@ -53,17 +87,51 @@ body {
   left: 9.5%;
   transform: translateX(-50%, 50%);
 }
+@media screen and (min-width: 992px) {
+  .img-container {
+    height: 100%;
+    overflow: hidden;
+  }
+  .img-container::after {
+    background-image: url(../images/bg-pattern-desktop.svg);
+    background-size: 38rem 40rem;
+    background-position: -19rem -11rem;
+    width: 100%;
+    height: 100%;
+    left: 0;
+  }
+  .faq-card__img {
+    width: 23rem;
+    height: 18rem;
+    transform: unset;
+    left: -5rem;
+    top: 1.5rem;
+    z-index: 10;
+  }
+}
 .faq-card__header {
   width: 100%;
   text-align: center;
   border-radius: 2em 2em 0 0;
 }
 .faq-card__title {
-  margin-bottom: 0.5em;
-  font-size: 2.1rem;
+  margin-bottom: 0;
+  font-size: 1.8rem;
 }
 .faq-card__body {
   padding: 1em 2em;
+}
+@media screen and (min-width: 992px) {
+  .faq-card__header {
+    text-align: left;
+  }
+  .faq-card__title {
+    margin-top: 1.85em;
+  }
+  .faq-card__body {
+    width: 80%;
+    padding: 2.3em 0 3.6em 0;
+  }
 }
 .faq-list {
   list-style: none;
@@ -78,14 +146,16 @@ body {
 .faq-card__question {
   position: relative;
   font-size: 0.8rem;
+  margin-bottom: 0;
 }
 .icon-container {
   position: absolute;
   right: 0;
 }
 .faq-card__answer {
-  color: var(--darkgrayishblue-answer);
   max-height: 0;
+  margin-top: 0.4em;
+  color: var(--darkgrayishblue-answer);
   visibility: hidden;
 }
 .attribution {
