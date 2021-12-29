@@ -1,19 +1,23 @@
-const accordion = document.getElementById("accordion");
-console.log(accordion);
-accordion.addEventListener("click", (e) => {
-  if (e.target.classList.contains("faq-card__question")) {
-    e.target.nextElementSibling.classList.toggle("faq-card__answer--visible");
-    e.target.nextElementSibling.classList.toggle("faq-card__answer--grow");
-    e.target.firstElementChild.firstElementChild.classList.toggle(
-      "icon-arrow--rotate"
-    );
-  } else if (e.target.classList.contains("icon-arrow")) {
-    e.target.parentElement.parentElement.nextElementSibling.classList.toggle(
-      "faq-card__answer--visible"
-    );
-    e.target.parentElement.parentElement.nextElementSibling.classList.toggle(
-      "faq-card__answer--grow"
-    );
-    e.target.classList.toggle("icon-arrow--rotate");
-  }
+const faqItems = document.querySelectorAll(".faq-card__content");
+
+faqItems.forEach((item) => {
+  const question = item.children[0];
+  const answer = item.children[1];
+  const icon = item.children[0].firstElementChild.firstElementChild;
+  item.addEventListener("click", (e) => {
+    if (
+      e.target.classList.contains("faq-card__question--active") ||
+      e.target.classList.contains("icon-arrow--rotate")
+    ) {
+      answer.classList.remove("faq-card__answer--visible");
+      answer.classList.remove("faq-card__answer--grow");
+      icon.classList.remove("icon-arrow--rotate");
+      question.classList.remove("faq-card__question--active");
+    } else {
+      question.classList.add("faq-card__question--active");
+      answer.classList.add("faq-card__answer--visible");
+      answer.classList.add("faq-card__answer--grow");
+      icon.classList.add("icon-arrow--rotate");
+    }
+  });
 });
