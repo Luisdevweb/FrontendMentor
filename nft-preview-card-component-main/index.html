@@ -1,51 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Frontend Mentor | NFT preview card component</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-  <main class="main"> 
-    <div class="wrapper">
-     <article class="card">
-        <figure class="card__figure">
-            <img class="card__img" src="images/image-equilibrium.jpg" alt="Equilibrium">
-            <img class="icon-view" src="images/icon-view.svg" alt="view">
-        </figure>
-        <section class="card__main-content">
-          <header>
-            <h2 class="title card__title">Equilibrium <span class="title__cod">#3429</span></h2>
-          </header>
-          <p class="card__description"> Our Equilibrium collection promotes balance and calm.</p>
-          <div class="row">
-            <div class="column">
-              <img class="icon icon-ethereum" src="images/icon-ethereum.svg"><p class="card__eth no-margin">0.041 ETH</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | NFT preview card component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="wrapper">
+        <article class="card">
+          <figure class="card__figure">
+            <img
+              class="card__img"
+              src="images/image-equilibrium.jpg"
+              alt="Equilibrium"
+            />
+            <img class="icon-view" src="images/icon-view.svg" alt="view" />
+          </figure>
+          <div class="card__main-content">
+            <header>
+              <h1 class="title card__title">
+                Equilibrium <span class="title__cod">#3429</span>
+              </h1>
+            </header>
+            <p class="card__description">
+              Our Equilibrium collection promotes balance and calm.
+            </p>
+            <div class="row">
+              <div class="column">
+                <img
+                  class="icon icon-ethereum"
+                  src="images/icon-ethereum.svg"
+                  alt="icon-ethereum"
+                />
+                <p class="card__eth no-margin">0.041 ETH</p>
+              </div>
+              <div class="column">
+                <img
+                  class="icon icon-clock"
+                  src="images/icon-clock.svg"
+                  alt="clock"
+                />
+                <p class="card__days no-margin">3 days left</p>
+              </div>
             </div>
-            <div class="column">
-                <img class="icon icon-clock" src="images/icon-clock.svg" alt="clock"><p class="card__days no-margin">3 days left</p> 
-            </div>
+            <footer class="card__footer">
+              <div class="row row--footer">
+                <img
+                  class="card__avatar"
+                  src="images/image-avatar.png"
+                  alt="avatar"
+                />
+                <p class="card__copy no-margin">
+                  Creation of <span class="card__creator">Jules Wyvern</span>
+                </p>
+              </div>
+            </footer>
           </div>
-          <footer class="card__footer">
-            <div class="row row--footer">
-              <img class="card__avatar" src="images/image-avatar.png" alt="avatar">
-              <p class="card__copy no-margin">Creation of <span class="card__creator">Jules Wyvern</span></p> 
-            </div>
-          </footer>
-        </section>
-     </article>
-    </div>
-  </main>
-  
+        </article>
+      </div>
+    </main>
 
-
-  <div style="position:fixed;bottom:0;background-color: #333;color:#fff;font-size: .95rem;width: 100%">
-    Challenge by <a style="text-decoration: none;color:rgb(165, 207, 123)" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by Luismac09.
-  </div>
-</body>
+    <footer
+      style="
+        position: fixed;
+        bottom: 0;
+        background-color: #333;
+        color: #fff;
+        font-size: 0.95rem;
+        width: 100%;
+      "
+    >
+      Challenge by
+      <a
+        style="text-decoration: none; color: rgb(165, 207, 123)"
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        >Frontend Mentor</a
+      >. Coded by Luismac09.
+    </footer>
+  </body>
 </html>

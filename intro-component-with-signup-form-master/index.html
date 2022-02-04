@@ -1,76 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Frontend Mentor | Intro component with sign up form</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
-  <script src="js/scripts.js" defer></script>
-</head>
-<body class="bg-intro">
- <div class="wrapper">
-    <main class="intro">
-      <div class="row">
-        <div class="column"> 
-          <section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Intro component with sign up form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <script src="js/scripts.js" defer></script>
+  </head>
+  <body class="bg-intro">
+    <main class="wrapper">
+      <section class="intro">
+        <div class="row">
+          <div class="column">
             <header class="intro__header">
               <h1 class="intro__title">Learn to code by watching others</h1>
             </header>
             <div class="intro__body">
-              <p class="intro__text"> See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable. </p>
+              <p class="intro__text">
+                See how experienced developers solve problems in real-time.
+                Watching scripted tutorials is great, but understanding how
+                developers think is invaluable.
+              </p>
             </div>
-          </section>
-        </div>
-       <div class="column">
-          <article class="intro__signup">
-            <div class='phrase-container'>
-              <p class="phrase"><span class="phrase__accent">Try it free 7 days</span> then $20/mo. thereafter</p>
-            </div>
-            <form id="form" class="form intro__form" action="">
+          </div>
+          <div class="column">
+            <article class="intro__signup">
+              <div class="phrase-container">
+                <h2 class="phrase">
+                  <span class="phrase__accent">Try it free 7 days</span> then
+                  $20/mo. thereafter
+                </h2>
+              </div>
+              <form id="form" class="form intro__form">
                 <div class="form__field">
                   <label class="form__label" for="firstname">First Name</label>
-                  <input class="form__input" type="text" id="firstname">
-                  <img class="error-icon" src="images/icon-error.svg" alt="error-icon">
-                  <span class="error-text" >First Name cannot be empty</span>
+                  <input class="form__input" type="text" id="firstname" />
+                  <img
+                    class="error-icon"
+                    src="images/icon-error.svg"
+                    alt="error-icon"
+                  />
+                  <span class="error-text">First Name cannot be empty</span>
                 </div>
                 <div class="form__field">
-                  <label class="form__label"  for="lastname">Last Name</label>
-                  <input class="form__input" type="text" id="lastname">
-                  <img class="error-icon" src="images/icon-error.svg" alt="error-icon">
-                  <span class="error-text" >Last Name cannot be empty</span>
+                  <label class="form__label" for="lastname">Last Name</label>
+                  <input class="form__input" type="text" id="lastname" />
+                  <img
+                    class="error-icon"
+                    src="images/icon-error.svg"
+                    alt="error-icon"
+                  />
+                  <span class="error-text">Last Name cannot be empty</span>
                 </div>
                 <div class="form__field">
                   <label class="form__label" for="email">Email Address</label>
-                  <input class="form__input" type="email" id="email">
-                  <img class="error-icon" src="images/icon-error.svg" alt="error-icon">
-                  <span class="error-text" >Looks like this is not an email</span>
+                  <input class="form__input" type="email" id="email" />
+                  <img
+                    class="error-icon"
+                    src="images/icon-error.svg"
+                    alt="error-icon"
+                  />
+                  <span class="error-text"
+                    >Looks like this is not an email</span
+                  >
                 </div>
                 <div class="form__field">
-                  <label class="form__label"  for="pass">Password</label>
-                  <input class="form__input" type="password" id="password">
-                  <img class="error-icon"  src="images/icon-error.svg" alt="error-icon">
-                  <span class="error-text" >password cannot be empty</span>
+                  <label class="form__label" for="password">Password</label>
+                  <input class="form__input" type="password" id="password" />
+                  <img
+                    class="error-icon"
+                    src="images/icon-error.svg"
+                    alt="error-icon"
+                  />
+                  <span class="error-text">password cannot be empty</span>
                 </div>
                 <div class="form__field form__field--mb0">
-                  <input class="form__submit" id="send" type="submit" value="Claim your free trial"/>
+                  <input
+                    class="form__submit"
+                    id="send"
+                    type="submit"
+                    value="Claim your free trial"
+                  />
                 </div>
-            </form>
-            <p class="agree">By clicking the button, you are agreeing to our <a href="#" class="agree__link">Terms and Services</a></p>
-          </article>
+              </form>
+              <p class="agree">
+                By clicking the button, you are agreeing to our
+                <a href="#" class="agree__link">Terms and Services</a>
+              </p>
+            </article>
+          </div>
         </div>
-      </div>
+      </section>
+
+      <footer
+        style="
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          font-size: 0.7rem;
+          background-color: hsl(0, 0%, 100%, 0.3);
+        "
+      >
+        <p style="margin-bottom: 0.2em">
+          Challenge by
+          <a
+            style="text-decoration: none; color: rgb(20, 82, 82)"
+            href="https://www.frontendmentor.io?ref=challenge"
+            target="_blank"
+            >Frontend Mentor</a
+          >. Coded by luismac09.
+        </p>
+      </footer>
     </main>
-  
-    <footer style="position:fixed;bottom:0;left:0;font-size:.7rem;background-color: hsl(0, 0%, 100%,.3);">
-      <p style="margin-bottom:.2em">
-      Challenge by <a style="text-decoration: none;color:rgb(20, 82, 82);" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by luismac09.
-      </p>
-    </footer>
-  </div>
-</body>
+  </body>
 </html>

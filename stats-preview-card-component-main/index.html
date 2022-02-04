@@ -1,45 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Frontend Mentor | Stats preview card component</title>
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-  <main class="main">
-   <div class="main__inner">
-      <article class="card"> 
-         <div class="column column--right">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Stats preview card component</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="main__inner">
+        <article class="card">
+          <div class="column column--right">
             <header class="card__header">
               <picture class="card__picture">
-                <source srcset="images/image-header-desktop.jpg" media="(min-width:1000px)">
-                <img  class="card__img" src="images/image-header-mobile.jpg" alt="img">
+                <source
+                  srcset="images/image-header-desktop.jpg"
+                  media="(min-width:1000px)"
+                />
+                <img
+                  class="card__img"
+                  src="images/image-header-mobile.jpg"
+                  alt="img"
+                />
               </picture>
             </header>
-         </div>
+          </div>
           <div class="column column--left">
             <div class="card__body">
-              <h2 class="card__title"> Get <span class="card__word">insights</span> that help your business grow.</h2>
+              <h1 class="card__title">
+                Get <span class="card__word">insights</span> that help your
+                business grow.
+              </h1>
               <p class="card__text">
-                Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.
+                Discover the benefits of data analytics and make better
+                decisions regarding revenue, customer experience, and overall
+                efficiency.
               </p>
             </div>
             <div class="card__footer">
-                <div class="card__stat"> 
-                  <p class="card__item"><span class="card__num">10k+</span> companies</p>
-                  <p class="card__item"><span class="card__num">314</span> templates </p>
-                  <p class="card__item"><span class="card__num">12m+</span> queries </p>
-                </div>
+              <div class="card__stat">
+                <p class="card__item">
+                  <span class="card__num">10k+</span> companies
+                </p>
+                <p class="card__item">
+                  <span class="card__num">314</span> templates
+                </p>
+                <p class="card__item">
+                  <span class="card__num">12m+</span> queries
+                </p>
+              </div>
             </div>
           </div>
-      </article>
-   </div>
-  </main>
-  <div style="position:fixed;bottom:0;z-index:2;font-size: 11px;text-align: center;color:white">
-    Challenge by 
-    <a style="color:hsl(228, 45%, 44%)" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by Luismac.
-  </div>
-</body>
+        </article>
+      </div>
+    </main>
+    <footer
+      style="
+        position: fixed;
+        bottom: 0;
+        z-index: 2;
+        font-size: 11px;
+        text-align: center;
+        color: white;
+      "
+    >
+      Challenge by
+      <a
+        style="color: hsl(228, 45%, 44%)"
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        >Frontend Mentor</a
+      >. Coded by Luismac.
+    </footer>
+  </body>
 </html>

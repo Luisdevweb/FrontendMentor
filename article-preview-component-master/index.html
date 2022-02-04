@@ -1,52 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Frontend Mentor | Article preview component</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-  <script src="js/scripts.js" defer></script>
-</head>
-<body>
-<div class="wrapper"> 
-  <article class="card">
-      <div class="container-img"> 
-        <img class="card__img" src="images/drawers.jpg" alt="drawers">
-      </div>
-      
-    <div class="column column--right"> 
-      <div class="card__body">
-          <h2 class="card__title">Shift the overall look and feel by adding these wonderful touches to furniture in your home</h2>
-          <p class="card__text">Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.</p>
-      </div>
-    
-      <section class="profile" id="profile"> 
-        <div class="flex">
-          <img class="profile__photo" src="images/avatar-michelle.jpg" alt="michelle">
-          <h3 class="profile__name">Michelle Appleton <span class="profile__date">28 Jun 2020</span></h3>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Article preview component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/scripts.js" defer></script>
+  </head>
+  <body>
+    <main class="wrapper">
+      <article class="card">
+        <div class="container-img">
+          <img class="card__img" src="images/drawers.jpg" alt="drawers" />
         </div>
-    
-        <svg class="profile__icon-share" id="iconsvg" xmlns="http://www.w3.org/2000/svg" width="15" height="13" ><path id="iconpath" class="icon-path" fill="#6E8098" d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/></svg>
-    
-        <nav id="share" class="social-icons flex">
-          <p class="social-icons__text">Share</p>
-          <a class="social-icons__link" href="#"><img src="images/icon-facebook.svg" alt="icon-facebook"></a>
-          <a class="social-icons__link" href="#"><img src="images/icon-twitter.svg" alt="icon-twitter"></a>
-          <a class="social-icons__link" href="#"><img src="images/icon-pinterest.svg" alt="icon-pinterest"></a>
-        </nav>
-      </section>
-    </div>
 
-  </article>
-</div>
+        <div class="column column--right">
+          <div class="card__body">
+            <h1 class="card__title">
+              Shift the overall look and feel by adding these wonderful touches
+              to furniture in your home
+            </h1>
+            <p class="card__text">
+              Ever been in a room and felt like something was missing? Perhaps
+              it felt slightly bare and uninviting. I’ve got some simple tips to
+              help you make any room feel complete.
+            </p>
+          </div>
 
-<div class="attribution" style="background:#333;color:white;position:fixed;bottom:0;left:0;font-size:.7rem">
-    Challenge by <a style="color: rgb(49, 221, 95);;text-decoration: none;" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by Luismac09.
-  </div>
-</body>
+          <section class="profile" id="profile">
+            <div class="flex">
+              <img
+                class="profile__photo"
+                src="images/avatar-michelle.jpg"
+                alt="michelle"
+              />
+              <h2 class="profile__name">
+                Michelle Appleton <span class="profile__date">28 Jun 2020</span>
+              </h2>
+            </div>
+
+            <svg
+              class="profile__icon-share"
+              id="iconsvg"
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="13"
+            >
+              <path
+                id="iconpath"
+                class="icon-path"
+                fill="#6E8098"
+                d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
+              />
+            </svg>
+
+            <nav id="share" class="social-icons flex">
+              <p class="social-icons__text">Share</p>
+              <a class="social-icons__link" href="#"
+                ><img src="images/icon-facebook.svg" alt="icon-facebook"
+              /></a>
+              <a class="social-icons__link" href="#"
+                ><img src="images/icon-twitter.svg" alt="icon-twitter"
+              /></a>
+              <a class="social-icons__link" href="#"
+                ><img src="images/icon-pinterest.svg" alt="icon-pinterest"
+              /></a>
+            </nav>
+          </section>
+        </div>
+      </article>
+    </main>
+
+    <footer
+      class="attribution"
+      style="
+        background: #333;
+        color: white;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        font-size: 0.7rem;
+      "
+    >
+      Challenge by
+      <a
+        style="color: rgb(49, 221, 95); text-decoration: none"
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        >Frontend Mentor</a
+      >. Coded by Luismac09.
+    </footer>
+  </body>
 </html>
