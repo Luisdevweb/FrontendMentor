@@ -16,3 +16,4 @@
 10. [base-apparel-coming-soon-master](https://luismac09.github.io/FrontendMentor/base-apparel-coming-soon-master/)
 11. [nft-preview-card-component-main](https://luismac09.github.io/FrontendMentor/nft-preview-card-component-main/)
 12. [faq-accordion-card-main](https://luismac09.github.io/FrontendMentor/faq-accordion-card-main/)
+13. [qr-code-component](https://luismac09.github.io/FrontendMentor/qr-code-component-main/)
