@@ -37,7 +37,7 @@
           <h2 class="section__title">We are launching <span>soon!</span></h2>
           <p class="section__text">Subscribe and get notified</p>
         </section>
-        <form class="form">
+        <form class="form" id="form">
           <div class="form__field">
             <label for="email" class="form__label"
               ><input
@@ -46,6 +46,9 @@
                 id="email"
                 placeholder="Your email address..."
             /></label>
+            <span class="error" id="error"
+              >Please Provide a valid email address</span
+            >
           </div>
           <button type="submit" class="button">Notify Me</button>
         </form>
@@ -81,5 +84,7 @@
         >. Coded by<span class="attribution__author"> Luismac09</span>.
       </p>
     </footer>
+
+    <script src="js/scripts.js"></script>
   </body>
 </html>

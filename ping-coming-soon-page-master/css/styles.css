@@ -26,9 +26,10 @@ button {
 input,
 input:focus {
   outline: none;
+  padding-left: 2em;
 }
 ::placeholder {
-  padding-left: 2em;
+  padding-left: 1em;
   color: var(--paleblue);
   font-size: 0.9em;
 }
@@ -103,6 +104,18 @@ input:focus {
   opacity: 60%;
   border-radius: 2em;
 }
+.form__input--error {
+  border-color: var(--lightred);
+}
+.error {
+  display: none;
+  font-size: 0.45em;
+  color: var(--lightred);
+  padding-left: 5em;
+}
+.error--visible {
+  display: inline-block;
+}
 .button {
   display: block;
   width: 100%;
@@ -112,12 +125,21 @@ input:focus {
   background-color: var(--lightblue);
   font-weight: 700;
 }
+.button:active {
+  opacity: 80%;
+}
+@media (hover: hover) {
+  .button:hover {
+    cursor: pointer;
+  }
+}
 @media screen and (min-width: 1024px) {
   .form {
     max-width: 600px;
     display: flex;
   }
   .form__field {
+    position: relative;
     flex: 1;
     margin-bottom: 0;
     margin-right: 0.5em;
@@ -127,6 +149,14 @@ input:focus {
   }
   .button {
     width: 160px;
+  }
+  .error {
+    padding-left: 0;
+    position: absolute;
+    top: 4.3em;
+    left: 2.7em;
+    font-size: 0.55em;
+    color: var(--lightred);
   }
 }
 .dashboard {
@@ -164,6 +194,13 @@ input:focus {
   color: var(--lightblue);
   border-radius: 50%;
   border: 1px solid var(--paleblue);
+}
+@media (hover: hover) {
+  .social__icon:hover {
+    cursor: pointer;
+    color: var(--paleblue);
+    background-color: var(--lightblue);
+  }
 }
 .fa-brands {
   font-size: 0.8rem;
