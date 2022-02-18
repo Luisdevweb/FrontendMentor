@@ -17,3 +17,4 @@
 11. [nft-preview-card-component-main](https://luismac09.github.io/FrontendMentor/nft-preview-card-component-main/)
 12. [faq-accordion-card-main](https://luismac09.github.io/FrontendMentor/faq-accordion-card-main/)
 13. [qr-code-component](https://luismac09.github.io/FrontendMentor/qr-code-component-main/)
+14. [ping-coming-soon-page-master](https://luismac09.github.io/FrontendMentor/ping-coming-soon-page-master/)
