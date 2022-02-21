@@ -64,6 +64,8 @@ img {
   text-indent: 0.3em;
 }
 .attribution {
+  width: 100%;
+  text-align: center;
   position: absolute;
   bottom: 0;
 }
