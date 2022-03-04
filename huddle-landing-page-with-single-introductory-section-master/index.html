@@ -30,7 +30,9 @@
   <body>
     <main class="main">
       <header class="header">
-        <h1 class="logo"><img src="images/logo.svg" alt="logo" /></h1>
+        <h1 class="logo">
+          <img class="logo__image" src="images/logo.svg" alt="logo" />
+        </h1>
       </header>
       <section class="body">
         <img
@@ -38,19 +40,27 @@
           src="images/illustration-mockups.svg"
           alt="illustration-mockups"
         />
-        <h2 class="body__title">Build The Community Your Fans Will Love</h2>
-        <p class="body__text">
-          Huddle re-imagines the way we build communities. You have a voice, but
-          so does your audience. Create connections with your users as you
-          engage in genuine discussion.
-        </p>
-        <a href="#" class="button">Register</a>
+        <div class="body__content">
+          <h2 class="body__title">Build The Community Your Fans Will Love</h2>
+          <p class="body__text">
+            Huddle re-imagines the way we build communities. You have a voice,
+            but so does your audience. Create connections with your users as you
+            engage in genuine discussion.
+          </p>
+          <a href="#" class="button">Register</a>
+        </div>
       </section>
       <footer class="footer">
         <div class="social">
-          <i class="fa-brands fa-facebook-f"></i>
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-instagram"></i>
+          <div class="social__icon">
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+          <div class="social__icon">
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+          <div class="social__icon">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
         </div>
         <p class="attribution">
           Challenge by
