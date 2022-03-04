@@ -1,0 +1,35 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --violet: hsl(257, 40%, 49%);
+  --softMagenta: hsl(300, 69%, 71%);
+  --bodyFont: "Open Sans", sans-serif;
+  --headingsFont: "Poppins", sans-serif;
+}
+html {
+  font-size: 10px;
+}
+body {
+  margin: 0;
+  font-size: 1.6rem;
+  font-family: var(--bodyFont);
+  color: var(--white);
+}
+h1 {
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--violet);
+  background-image: url(../images/bg-mobile.svg);
+  background-repeat: no-repeat;
+}
+.footer {
+  text-align: center;
+  margin-top: auto;
+}
